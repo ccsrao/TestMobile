@@ -1,0 +1,38 @@
+Steps to configure credentials in jenkins
+
+1. Login to Jenkins
+2. Click on "Credentials" link in left pane
+3. Click on "System" link
+4. Click on "Global credentials (unrestricted)" in the right side
+5. Click on "Add Credentials" link
+6. Provide tomcat Username, password and ID
+7. Click on "OK"
+
+
+Steps to enable automatic deployments when changes are pushed to git
+
+Jenkins Configuration:
+1. Login to Jenkins
+2. Click on "Manage Jenkins" link
+3. Click on "Manage Plugins" link
+4. Navigate to "Available" Tab and Search with "Build Authorization Token Root"
+5. Install "Build Authorization Token Root" Plugin
+
+Git Configuration:
+1. Login to Git
+2. Navigate to Repository
+3. Click on "Settings" Tab
+4. Click on "Webhooks" link
+5. Click on "Add webhook" button
+6. Provide Playload URL(Ex:http://jenkinsserver-public-url/github-webhook/)
+7. Select Content Type as application/json"
+8. Click on "Add webhooh" button
+
+
+
+
+
+
+
+
+
